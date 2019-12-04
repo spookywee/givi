@@ -550,6 +550,10 @@ footer{
   width: 100%;
   margin-right: 20px;
   padding-left:20px;
+  border:none;
+  box-shadow: 0 0 5px 2px rgba(122,122,122,0.1);
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
 }
 
 .message-form__inner_form textarea{
@@ -561,9 +565,14 @@ footer{
   width: 100%;
   padding-left: 20px;
   padding-top:20px;
+  border:none;
+  box-shadow: 0 0 5px 2px rgba(122,122,122,0.1);
+  margin-bottom:20px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
 }
 
-.form_btn{
+.form_btn{ 
   width: 100%;
   max-width: 928px;
   margin-right: 20px;
