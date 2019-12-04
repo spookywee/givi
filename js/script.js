@@ -1,6 +1,9 @@
 let drop_menu = document.querySelector(".drop_menu");
 let dropdown_menu_list = document.querySelector(".dropdown_menu-list");
 
+let mob_drop_menu = document.querySelector(".mob-drop");
+let mob_dropdown_menu_list = document.querySelector(".drop_mob-list");
+
 function dropdown_menu(){
     drop_menu.addEventListener("mousemove",function(){
         dropdown_menu_list.style.display = "block";
@@ -17,7 +20,21 @@ function dropdown_menu(){
         dropdown_menu_list.style.display = "none";
     });
 
+
+    mob_drop_menu.addEventListener("mousemove",function(){
+        mob_dropdown_menu_list.style.display = "block";
+    });
+
+    mob_dropdown_menu_list.addEventListener("mousemove",function(){
+        mob_dropdown_menu_list.style.display = "block";
+    });
     
+    mob_drop_menu.addEventListener("mouseout",function(){
+        mob_dropdown_menu_list.style.display = "none";
+    });
+    mob_dropdown_menu_list.addEventListener("mouseout",function(){
+        mob_dropdown_menu_list.style.display = "none";
+    });
 }
 
 dropdown_menu();

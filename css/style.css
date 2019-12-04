@@ -219,14 +219,14 @@ header{
   background-size: cover;
   /* width:100%;
   height: 100%; */
-  position: relative;
+  /* position: relative; */
 }
 
 .header__video a img{
   position: absolute;
-  top: 170px;
-  right: 150px;
-  left: 40%;
+    top: 300px;
+    right: 46px;
+    left: 84%;
 }
 
 /* .backdrop {
@@ -274,11 +274,13 @@ header{
 .header__text-info h1{
   line-height: 44px;
   font-size: 36px;
+  padding-bottom: 50px;
 }
 
 .header__text-info p{
   line-height: 28px;
   font-size: 20px;
+  color: #F2F2F2;
 }
 
 .header__text-link_inner{
@@ -365,6 +367,11 @@ header{
 
 .line-list{
   margin:0 480px;
+}
+
+.spec_line{
+  text-align: center;
+    margin-bottom: 150px;
 }
 
 /* ---------------- */
@@ -622,7 +629,7 @@ footer{
     }
   }
 
-@media only screen and (max-width:1080px){
+@media only screen and (max-width:1023px){
   .nav{
     display: none;
   }
@@ -651,11 +658,11 @@ footer{
   } */
 
   .dropdown_menu-list{
-    top: 18px;
+    top: 24px;
     /* left: 229px; */
-    display: none;
+    /* display: none; */
     /* position: absolute; */
-    right: 231px;
+    right: 135px;
 }
 
 
