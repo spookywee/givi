@@ -119,7 +119,7 @@ $('.review_cards').slick({
 //     centerMode: true,
 //     // dots:true,
 //     centerPadding: '60px',
-//     slidesToShow: 1,
+//     slidesToShow: 2,
 //     responsive: [
 //       {
 //         breakpoint: 768,

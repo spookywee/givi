@@ -253,11 +253,11 @@ header{
   left: 0;
 } */
 
-.video{
+/* .video{
   position: fixed;
     margin-left: 35%;
     margin-top:100px;
-}
+} */
 
 
 
@@ -381,6 +381,8 @@ header{
   text-align: center;
     margin-bottom: 150px;
 }
+
+
 
 /* ---------------- */
 
@@ -507,6 +509,10 @@ footer{
 
 .footer_right .social-networks i{
   color:#fff;
+}
+
+.mobile-copyright{
+  display:none;
 }
 
 /* --------------------CONTACTS PAGE----------------------- */
@@ -675,8 +681,17 @@ footer{
 
 .main-staff_info .social-networks i{
   color:#000;
-  margin-bottom: 40px;
+  margin-bottom: 50px;
 }
+
+.btn-container{
+  text-align: center;
+}
+
+.main-staff_info .btn-container{
+  text-align: left;
+}   
+
 
 .button{
   border:1px solid #000;
@@ -699,6 +714,10 @@ footer{
   padding-left:30px;
   width: 100%;
   max-width: 390px;
+}
+
+.other-staff_card img{
+  width:100%;
 }
 
 .other-staff_card h1{
@@ -777,11 +796,15 @@ footer{
 .send-form__inner input{
   max-width:500px;
   width: 100%;
+  box-shadow:none;
+  border-bottom: 1px solid;
 }
 
 .send-form__inner textarea{
   max-width:500px;
   width: 100%;
+  box-shadow:none;
+  border-bottom: 1px solid;
 }
 
 .send-form__inner .form_btn{
@@ -822,10 +845,71 @@ footer{
     margin: 40px 0 40px 100px;
 }
 
+.quote{
+  background-image:url("../img/photo-quote.png");
+  background-repeat:no-repeat;
+  background-size:cover;
+  background-position: center center;
+  width: 100%;
+  height: 100%;
+  padding-top:980px;
+  position: relative;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.mark-open{
+  position: absolute;
+    right: 470px;
+    bottom: 110px;
+}
+
+.mark-close{
+  position: absolute;
+    bottom: 110px;
+    left: 490px;
+    transform: rotate(-180deg);
+}
+
+
+.quote p{
+  text-align: center;
+  margin:0 auto;
+  color:#fff;
+  line-height: 24px;
+  padding-bottom: 100px;
+  max-width: 890px;
+  width:100%;
+}
+
 /* -------------MEDIA------------------ */
 
 
 @media only screen and (max-width:980px){
+
+  p{
+    font-size: 100%;
+  }
+
+  .mob-menu .nav {
+    padding-right: 0;
+    font-size: 14px;
+  }
+
+  .dropdown_menu-list{
+    right:100px;
+  }
+
+  .button{
+    padding: 10px 50px;
+  }
+
+  .staff__inner_main img {
+    padding-left: 10px;
+    width: calc(100%/2);
+    height: calc(100%/2);
+}
+
   .main-specialist__inner {
       flex-direction: column-reverse;
     }
@@ -854,14 +938,17 @@ footer{
 
     .contacts__inner_content img{
       width: 50%;
-      /* height: 20%; */
       padding-top: 100px;
+      height: 100%;
+      align-self: center;
     }
 
     .message-form__inner_form input{
       max-width:928px;
       margin-top:10px;
     }
+
+  
 
     /* ------------------------------ */
 
@@ -879,9 +966,7 @@ footer{
 
   }
 
-  @media only screen and (max-width:820px){
-    
-  }
+
 
 
   @media only screen and (max-width:780px){
@@ -891,6 +976,15 @@ footer{
 
     .technology_card img{
       width: 250px;
+    }
+
+    .spec_line img{
+      width: 100%;
+    }
+
+
+    .left-side{
+      width:50%;
     }
   }
 
@@ -953,7 +1047,88 @@ footer{
 
 }
 
+@media only screen and (max-width:500px){
 
+  .technology_card{
+    max-width: 180px;
+  }
+
+  .technology_card img{
+    width: 180px;
+  }
+
+  .mark-open{
+
+      right: 220px;
+
+  }
+  
+  .mark-close{
+
+      left: 220px;
+
+  }
+
+  .staff__inner_main{
+    flex-direction:column;
+  }
+
+  .staff__inner_main img{
+    padding-left: 0;
+    padding-bottom: 20px;
+    width:86%;
+    height: 50%;
+    margin: 0 auto;
+  }
+
+  .main-staff_info {
+    padding-left: 0px;
+    width: 100%;
+    max-width: 385px;
+    margin: 0px auto;
+  }
+
+  .main-staff_info .btn-container{
+    text-align: center;
+  }
+
+  .other-staff_card{
+    padding-left: 0;
+  }
+
+
+  .footer__inner{
+    grid-template-columns: 1fr;
+    padding-left: 0;
+  }
+
+  .copyright{
+    display: none;
+  }
+
+  .mobile-copyright{
+    display:block;
+    padding-top:50px;
+  }
+
+  .left-side{
+    width:100%;
+  }
+}
+
+@media only screen and (max-width:410px){
+  .technology_card{
+    max-width: 130px;
+  }
+
+  .technology_card img{
+    width: 130px;
+  }
+
+  .footer_left h1{
+    font-size: 180%;
+  }
+}
 
 /* @media only screen and (max-width:980px){
 .main-specialist__inner {
