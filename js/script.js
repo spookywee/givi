@@ -62,6 +62,24 @@ function mobileMenu(){
 mobileMenu();
 
 
+
+function opencloseForm(){
+
+    $(".button").click(function(){
+        $(".send-form").css("display", "block");
+        $(".form-opacity").css("display", "block");
+    })
+
+    $(".send-form img").click(function(){
+        $(".send-form").css("display", "none");
+        $(".form-opacity").css("display", "none");
+    })
+    
+}
+
+opencloseForm();
+
+
 $('.review_cards').slick({
     dots: false,
     infinite: false,
@@ -96,6 +114,34 @@ $('.review_cards').slick({
 
     ]
   });
+
+//   $('.video-slider').slick({
+//     centerMode: true,
+//     // dots:true,
+//     centerPadding: '60px',
+//     slidesToShow: 1,
+//     responsive: [
+//       {
+//         breakpoint: 768,
+//         settings: {
+//           arrows: false,
+//           dots:true,
+//           centerMode: true,
+//           centerPadding: '40px',
+//           slidesToShow: 1
+//         }
+//       },
+//       {
+//         breakpoint: 480,
+//         settings: {
+//           arrows: false,
+//           centerMode: true,
+//           centerPadding: '40px',
+//           slidesToShow: 1
+//         }
+//       }
+//     ]
+//   });
 
   $('.slick-next').hide();
   $('.slick-prev').hide();
