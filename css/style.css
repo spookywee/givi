@@ -920,9 +920,15 @@ footer{
   .main-specialist__inner {
       flex-direction: column-reverse;
     }
+
+    .right-side{
+      width: 100%;
+    }
   
     .main-specialist_info{
       margin:0 auto;
+      padding-left:10px;
+      padding-top:0;
     }
   
     .main-specialist_bg{
