@@ -79,6 +79,25 @@ function opencloseForm(){
 
 opencloseForm();
 
+$(".video-play").click(function(){
+    videoOpen();
+})
+
+function videoOpen(){
+
+    $(".form-opacity").css("display", "block");
+
+    $(".form-opacity").mouseup(function (e) {
+        var container = $(".video");
+        if (container.has(e.target).length === 0){
+            $(".form-opacity").css("display", "none");
+        }
+    });
+
+
+}
+
+
 
 $('.review_cards').slick({
     dots: false,
@@ -99,49 +118,53 @@ $('.review_cards').slick({
       {
         breakpoint: 800,
         settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2
+        }
+      }
+      ,
+      {
+        breakpoint: 480,
+        settings: {
           slidesToShow: 1,
           slidesToScroll: 1
         }
       }
-    //   ,
-    //   {
-    //     breakpoint: 480,
-    //     settings: {
-    //       slidesToShow: 1,
-    //       slidesToScroll: 1
-    //     }
-    //   }
 
     ]
   });
 
-//   $('.video-slider').slick({
-//     centerMode: true,
-//     // dots:true,
-//     centerPadding: '60px',
-//     slidesToShow: 2,
-//     responsive: [
-//       {
-//         breakpoint: 768,
-//         settings: {
-//           arrows: false,
-//           dots:true,
-//           centerMode: true,
-//           centerPadding: '40px',
-//           slidesToShow: 1
-//         }
-//       },
-//       {
-//         breakpoint: 480,
-//         settings: {
-//           arrows: false,
-//           centerMode: true,
-//           centerPadding: '40px',
-//           slidesToShow: 1
-//         }
-//       }
-//     ]
-//   });
+  $('.video-slider').slick({
+    centerMode: true,
+    dots:false,
+    nextArrow:false,
+    prevArrow:false,
+    centerPadding: '60px',
+    slidesToShow: 1,
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          arrows: false,
+          dots:false,
+          centerMode: true,
+          centerPadding: '40px',
+          slidesToShow: 1
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          arrows: false,
+          nextArrow:false,
+          prevArrow:false,
+          centerMode: true,
+          centerPadding: '40px',
+          slidesToShow: 1
+        }
+      }
+    ]
+  });
 
-  $('.slick-next').hide();
+  $('.slick-arrow').hide();
   $('.slick-prev').hide();
