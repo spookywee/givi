@@ -606,6 +606,7 @@ footer {
   border: none;
   font-size: 20px;
   text-transform: uppercase;
+  cursor: pointer;
 }
 
 /* -------------About--------------------- */
@@ -716,6 +717,7 @@ footer {
   font-size: 20px;
   text-transform: uppercase;
   border-radius: 5px;
+  cursor: pointer;
 }
 
 
@@ -776,6 +778,7 @@ footer {
 
 .send-form img {
   float: right;
+  cursor: pointer;
 }
 
 .form-opacity {
